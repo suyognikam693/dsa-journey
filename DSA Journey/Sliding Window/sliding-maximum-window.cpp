@@ -1,3 +1,10 @@
+// Problem: Sliding Window Maximum
+// Platform: LeetCode
+// Source: NeetCode 150
+// Topic:  Sliding Window
+// Approach: Maintain the maximum of the current window. If the max element slides out of the window, 
+//           recompute the maximum by scanning the window again. Otherwise, reuse the previous max.
+
 class Solution {
 public:
     vector<int> maxSlidingWindow(vector<int>& nums, int k) {
